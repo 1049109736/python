@@ -196,10 +196,10 @@ while running:
     if not player.is_hit:
         screen.blit(player.image[player.img_index], player.rect)
         # 更换图片索引使飞机有动画效果
-        player.img_index = shoot_frequency // 8
+        player.img_index = shoot_frequency 
     else:
         # 玩家飞机被击中后的效果处理
-        player.img_index = player_down_index // 4
+        player.img_index = player_down_index 
         screen.blit(player.image[player.img_index], player.rect)
         player_down_index += 1
         if player_down_index > 8:
