@@ -5,7 +5,6 @@ import random
 import win32timezone
 import time
 
-
 # 玩家飞机类
 class Player(pygame.sprite.Sprite):
     def __init__(self, plane_img, init_pos):
@@ -66,7 +65,6 @@ class Bullet(pygame.sprite.Sprite):
     def move(self):
         self.rect.top -= self.speed
 
-
 # 敌机类，跟子弹类有些类似
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, enemy_img, enemy_down_imgs, init_pos):
@@ -81,7 +79,6 @@ class Enemy(pygame.sprite.Sprite):
     # 敌机移动，边界判断及删除在游戏主循环里处理
     def move(self):
         self.rect.top += self.speed
-
 
 # 糖果类
 class Candy(pygame.sprite.Sprite):
